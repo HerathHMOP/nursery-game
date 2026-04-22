@@ -10,7 +10,7 @@ let dbReady = false;
 const fallbackStorage = [];
 
 // Connect to MongoDB (local or Atlas) //test
-mongoose.connect("mongodb://localhost:27017/nursery-game").then(() => {
+mongoose.connect("mongodb+srv://onelherath0918_db_user:123@cluster0.lyfk1al.mongodb.net/?appName=Cluster0").then(() => {
   dbReady = true;
   console.log("MongoDB connected successfully.");
 }).catch(err => {
