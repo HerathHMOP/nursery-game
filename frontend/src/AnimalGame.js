@@ -85,7 +85,7 @@ function AnimalGame({ onNext }) {
     const data = getData();
 
     try {
-      await axios.post("http://localhost:5000/save", {
+      await axios.post(`${process.env.REACT_APP_API_URL}/save`, {
         studentId: "child_01",
         activity: "animal_drag_game",
         ...data,

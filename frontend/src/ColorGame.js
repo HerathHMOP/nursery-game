@@ -63,7 +63,7 @@ function ColorGame({ onNext }) {
     const data = getData();
 
     try {
-      await axios.post("http://localhost:5000/save", {
+      await axios.post(`${process.env.REACT_APP_API_URL}/save`, {
         activity: "color_game",
         ...data,
       });

@@ -113,7 +113,7 @@ function LetterGame({ onNext }) {
     const data = getData();
 
     try {
-      await axios.post("http://localhost:5000/save", {
+      await axios.post(`${process.env.REACT_APP_API_URL}/save`, {
         studentId: "child_01",
         activity: "number_matching_0_to_9",
         matches,
