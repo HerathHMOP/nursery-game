@@ -9,7 +9,7 @@ app.use(express.json());
 let dbReady = false;
 const fallbackStorage = [];
 
-// Connect to MongoDB (local or Atlas)
+// Connect to MongoDB (local or Atlas) //test
 mongoose.connect("mongodb://localhost:27017/nursery-game").then(() => {
   dbReady = true;
   console.log("MongoDB connected successfully.");
